@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { A } from "./A";
+import { B } from "./B";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/MiVacuna/CDVCOL/ValCertDigVacsVTJGc2RHVmtYMS9pZXpMSmREYUFqWUsxeUNaa1hrWFc2YkE2U3BDelErbis4bGowNi9kSmlZU3hRT3pEcy9GMklWaGo2R3N0aTA3ZHplcFpaVS9iZytza1NCeWlwM004N1UwazlPa2JNVkE9"
+          element={<A />}
+        />
+        <Route
+          path="/MiVacuna/CDVCOL/RonCertDigVacsVTJGc2RHVmtYMS9pZXpMSmREYUFqWUsxeUNaa1hrWFc2YkE2U3BDelErbis4bGowNi9kSmlZU3hRT3pEcy9GMklWaGo2R3N0aTA3ZHplcFpaVS9iZytza1NCeWlwM004N1UwazlPa2JNVkE9"
+          element={<B />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
